@@ -1,0 +1,256 @@
+/* ------------------------------------------------------ Meta ------------------------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E1D7C6;
+    font-family: 'Lato', 'Open Sans', 'Roboto', sans-serif;
+}
+
+.introText {
+    text-align: center;
+    font-size: large;
+}
+
+.mainMargin {
+    margin: 30px;
+}
+
+/* ------------------------------------------------------ NavBar ------------------------------------------------------ */
+
+nav {
+    position: sticky;
+    top: 0px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    background-color: #613f30;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbarUl {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbarUl li {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbarUl li:hover {
+    background-color: #835440;
+}
+
+.navbarUl a {
+    text-decoration: none;
+    color: #e7dfd1;
+    font-size: 20px;
+    padding: 0px 20px;
+}
+
+/* ------------------------------------------------------Home Page ------------------------------------------------------ */
+
+.welcome {
+    background-image: url("https://images.pexels.com/photos/772472/pexels-photo-772472.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    -webkit-text-stroke: .5px black;
+    color: white;
+}
+
+.indexH2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.aboutKingdom {
+    margin: 100px auto;
+}
+
+/*------------------------------------------------------ Royal family ------------------------------------------------------ */
+
+#royalFamilyImages {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#royalFamilyImages img {
+    height: 600px;
+    width: 400px;
+
+    object-fit: cover;
+    border-radius: 5%;
+    margin: 0;
+    padding: 0;
+}
+
+.portraitFigure {
+    text-align: center;
+}
+
+.royalFamilyCaption {
+    font-style: italic;
+    padding: 2px;
+    font-size: 25px;
+}
+
+#kingImage {
+    object-position: 62% 0%;
+}
+
+#queenImage {
+    object-position: 31% 0%;
+}
+
+/* ------------------------------------------------------ Assets ------------------------------------------------------ */
+
+#divTable {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#assetTable {
+    margin: 24px 0;
+    font-size: large;
+    border-collapse: collapse;
+    border: solid;
+    background-color: #e7dfd1;
+    width: 50%;
+}
+
+#assetTable thead {
+    justify-content: center;
+    flex-direction: column;
+}
+
+#assetTable td {
+    padding: 20px;
+    border: solid;
+}
+
+/*------------------------------------------------------ Contact Us ------------------------------------------------------*/
+
+.contactForm {
+    width: 500px;
+    height: 75%;
+    background-color: #8a6251;
+    border-radius: 10px;
+    font-size: larger;
+
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    translate: -50% -50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.contactDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactLabel {
+    padding-bottom: 10px;
+}
+
+.formInput {
+    width: 80%;
+}
+
+#messageTextarea {
+    height: 200px;
+    width: 80%;
+    resize: none;
+}
+
+
+.divFieldset {
+    display: flex;
+    justify-content: center;
+}
+
+.contactFieldset {
+    max-width: 75%;
+    border-color: #E1D7C6;
+}
+
+
+.formSubmitBtn {
+    width: 80%;
+    height: 30px;
+}
+
+
+/* ------------------------------------------------------ Media ------------------------------------------------------ */
+
+/* royal family */
+@media(max-width:1435px) {
+
+    #royalFamilyImages img {
+        height: 400px;
+        width: 300px;
+    }
+}
+
+@media(max-width:1100px) {
+
+    #royalFamilyImages img {
+        height: 400px;
+        width: 200px;
+    }
+}
+
+@media(max-width:808px) {
+
+    #royalFamilyImages img {
+        height: 600px;
+        width: 400px;
+    }
+
+    #royalFamilyImages {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* navbar */
+@media (max-width:599px) {
+
+    .navbarUl {
+        text-align: center;
+        line-height: 25px;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img class="logo"
+                src="https://img.freepik.com/vecteurs-premium/illustration-blason-royal-dore-gaufrage-cuir_201250-238.jpg?w=826"
+                alt="Logo of the kingdom of Colchis">
+        </div>
+
+        <ul class="navbarUl">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="royal-family.html">Royal Family</a></li>
+            <li><a href="assets.html">Royal Assets</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="introText">
+        <h2>
+            Contact the Royal Kingdom
+        </h2>
+        <p>
+            Fill in the form below to contact the Royal Kingdom:
+        </p>
+    </section>
+
+
+    <form class="contactForm" action="/action">
+        <div class="contactDiv">
+            <label class="contactLabel" for="fNameInput">Full Name:</label>
+            <input class="formInput" type="text" id="fNameInput" placeholder="Connor Sarah">
+        </div>
+        <div class="contactDiv">
+            <label class="contactLabel" for="emailInput">Email:</label>
+            <input class="formInput" type="text" id="emailInput" placeholder="connorsarah@mail.com">
+        </div>
+        <div class="contactDiv">
+            <label class="contactLabel" for="messageTextarea">Message:</label>
+            <textarea id="messageTextarea" placeholder="Type your message here"></textarea>
+        </div>
+
+        <!-- radio -->
+
+        <div class="divFieldset">
+            <fieldset class="contactFieldset">
+                <legend>Are you a member of the clergy or an aristocrat?</legend>
+                <label for="yesForm">Yes</label>
+                <input type="radio" id="yesForm" name="clergyAristocrat">
+                <label for="noForm">No</label>
+                <input type="radio" id="noForm" name="clergyAristocrat" checked><br>
+            </fieldset>
+        </div>
+        <div>
+            <input class="formSubmitBtn" type="submit" value="Send">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
